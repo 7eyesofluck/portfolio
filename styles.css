@@ -87,7 +87,7 @@ body {
 .hamburger-menu {
   display: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 4px;
   cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ body {
   }
 
   .nav-links.active li {
-    margin-bottom: 1rem; /* Increase space between items */
+    margin-bottom: 3rem; /* Increase space between items */
   }
 
   /* Optional: Increase gap between buttons */
