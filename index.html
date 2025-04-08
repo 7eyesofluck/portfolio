@@ -12,16 +12,22 @@
       <div class="nav-container">
         <div class="logo">7eyesofluck</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://discord.gg/xXv8ks72c8" target="_blank" class="discord-btn">
-            <img src="images\discord.svg" alt="Discord Icon" class="discord-icon"/>Discord</a>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/xXv8ks72c8" target="_blank" class="discord-btn">
+              <img src="images\discord.svg" alt="Discord Icon" class="discord-icon" />Discord </a>
           </li>
         </ul>
       </div>
     </nav>
-
     <!-- 👤 Hero section -->
     <header class="hero" id="home">
       <div class="hero-content">
@@ -33,7 +39,6 @@
         </div>
       </div>
     </header>
-
     <script>
       // Function to update colors based on background (you can modify this as per the background's dominant color)
       function updateColors() {
@@ -41,10 +46,8 @@
         const title = document.getElementById('hero-title');
         const description = document.getElementById('hero-description');
         const button = document.getElementById('hero-button');
-        
         // Example: Check if background color is dark or light
-        const isDarkBackground = true;  // You can modify this condition based on your GIF
-
+        const isDarkBackground = true; // You can modify this condition based on your GIF
         if (isDarkBackground) {
           // Dark background: Light text and button colors
           title.style.color = "#ffffff";
@@ -59,11 +62,9 @@
           button.style.color = "#ffffff"; // Light text on button
         }
       }
-
       // Call the function when the page loads
       window.onload = updateColors;
     </script>
-
     <!-- 💼 Services and About Side by Side -->
     <section class="services-about-container">
       <section class="services" id="projects">
@@ -74,36 +75,31 @@
           <div class="card fade-in-on-scroll">💻 HTML & CSS Pro</div>
         </div>
       </section>
-		<section class="project">
-			<h2 class="fade-in-on-scroll">Current Projects</h2>
-			<div class="card2 fade-in-on-scroll">coming soon...</div>
-			<div class="card2 fade-in-on-scroll">coming soon...</div>
-			<div class="card2 fade-in-on-scroll">coming soon...</div>
-		</section>
+      <section class="project">
+        <h2 class="fade-in-on-scroll">Current Projects</h2>
+        <div class="card2 fade-in-on-scroll">coming soon...</div>
+        <div class="card2 fade-in-on-scroll">coming soon...</div>
+        <div class="card2 fade-in-on-scroll">coming soon...</div>
+      </section>
       <section class="about" id="about">
         <h2 class="fade-in-on-scroll">About Me</h2>
-        <p class="fade-in-on-scroll">
-          I am 16 years old, from Austria and Bosnia, and I have completed the 9th grade. <br><br>
-          I have been interested in IT for 9 years, especially web development. <br><br>
-          In my free time, I like to develop websites for myself and create small tools & scripts. <br><br>
-          I have good knowledge of HTML and CSS and am constantly working to improve my skills.
+        <p class="fade-in-on-scroll"> I am 16 years old, from Austria and Bosnia, and I have completed the 9th grade. <br>
+          <br> I have been interested in IT for 9 years, especially web development. <br>
+          <br> In my free time, I like to develop websites for myself and create small tools & scripts. <br>
+          <br> I have good knowledge of HTML and CSS and am constantly working to improve my skills.
         </p>
       </section>
     </section>
-
     <!-- 📬 Contact -->
     <section class="contact" id="contact">
       <h2 class="fade-in-on-scroll">Contact</h2>
-      <p class="fade-in-on-scroll">
-        You can contact me on Discord: <strong class="fade-in-on-scroll">7eyesofluck</strong>
+      <p class="fade-in-on-scroll"> You can contact me on Discord: <strong class="fade-in-on-scroll">7eyesofluck</strong>
       </p>
     </section>
-
     <!-- 🔚 Footer -->
     <footer>
       <p>&copy; 2025 7eyesofluck. All rights reserved.</p>
     </footer>
-
     <!-- 🎬 Scroll-triggered fade-ins -->
     <script>
       const faders = document.querySelectorAll('.fade-in-on-scroll');
@@ -118,7 +114,6 @@
           observer.unobserve(entry.target);
         });
       }, appearOptions);
-
       faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
