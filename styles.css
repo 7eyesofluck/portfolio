@@ -83,31 +83,53 @@ body {
   margin-right: 8px; /* Space between icon and text */
 }
 
-/* Hamburger Menu - Mobile Styles */
 .hamburger-menu {
   display: none;
-  cursor: pointer;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
+  cursor: pointer;
 }
 
 .hamburger-menu div {
-  width: 30px;
-  height: 5px;
-  background-color: white;
+  width: 25px;
+  height: 3px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
 }
 
-.nav-links.mobile-nav {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.nav-links.mobile-nav.active {
+/* Hide the nav links by default in mobile view */
+.nav-links {
+  list-style: none;
   display: flex;
+  gap: 2rem;
 }
 
+/* When active, show the nav links in mobile view */
+.nav-links.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1e1e2f;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+}
 /* 👤 Hero */
 .hero {
   display: flex;
