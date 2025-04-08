@@ -83,6 +83,7 @@ body {
   margin-right: 8px; /* Space between icon and text */
 }
 
+/* Hamburger menu styles (mobile view) */
 .hamburger-menu {
   display: none;
   flex-direction: column;
@@ -101,7 +102,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2rem;  /* Default gap for desktop */
 }
 
 /* When active, show the nav links in mobile view */
@@ -115,6 +116,7 @@ body {
   text-align: center;
 }
 
+/* Mobile view adjustments */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -126,10 +128,21 @@ body {
     display: flex;
   }
 
+  /* Increase the gap between buttons when the menu is active on mobile */
   .nav-links.active {
     display: block;
   }
+
+  .nav-links.active li {
+    margin-bottom: 1rem; /* Increase space between items */
+  }
+
+  /* Optional: Increase gap between buttons */
+  .nav-links.active a {
+    padding: 0.75rem 1rem;
+  }
 }
+
 /* 👤 Hero */
 .hero {
   display: flex;
