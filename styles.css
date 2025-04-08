@@ -87,7 +87,7 @@ body {
 .hamburger-menu {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
   cursor: pointer;
 }
 
