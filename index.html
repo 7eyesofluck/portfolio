@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Coding Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="background-glow"></div>
+    <div id="background-dots"></div>
+    <nav>
+        <a class="logo-area" href="/">
+            <!-- SVG Eye Logo -->
+            <svg class="eye-logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <ellipse cx="16" cy="16" rx="14" ry="10" stroke="white" stroke-width="2"/>
+                <circle cx="16" cy="16" r="5" fill="white"/>
+                <circle cx="16" cy="16" r="2" fill="#000"/>
+            </svg>
+            <span class="logo-text">AHMEDH</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="glitch" data-text="Hi, I'm Ahmed Husic!">Hi, I'm Ahmed Husic!</h1>
+        <p class="subtitle">I'm a developer based in Vienna, Austria.</p>
+        <div class="scroll-down">↓</div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate developer who loves coding unique apps/scripts.<br>
+            I specialize in web development, creative design, and bringing ideas to life with code.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Valorant TT Script</h3>
+                <p>Sends a randomly chosen message into the VALORANT all chat.</p>
+                <a href="https://github.com/7eyesofluck/trash-talk-bind" target="https://github.com/7eyesofluck/trash-talk-bind">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach out via <a href="mailto:ahmedhusic@7eyes.dev">email</a>.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
